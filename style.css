@@ -1,0 +1,117 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+img{
+    width:100%;
+}
+body{
+    padding:2rem;
+    width:375px;
+    background-color:hsl(257, 40%, 49%) ;
+    background-image:url(images/bg-mobile.svg);
+     font-family: 'Poppins', sans-serif;
+     background-repeat: no-repeat;
+}
+.navbar img{
+    width: 40%;   
+}
+.navbar{
+    min-height: 4rem;
+}
+.main-image{
+    width:95%;
+    position: relative;
+    left:160px;
+    top:32px;
+    transform: translate(-50%);
+}
+.content{
+    text-align: center;
+    color: #fff;
+}
+.content p{
+font-size: 1rem;
+padding-bottom: 30px;
+}
+.heading{
+    font-size: 1.5rem;
+    margin-top:90px;
+    margin-bottom: 1rem;
+}
+.btn{
+    padding:0.8rem 4rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.socialmedia ul{
+    list-style: none;
+    display: flex;
+    margin-top: 4rem;
+    margin-left:6rem;
+}
+.socialmedia li{
+    margin-right:1rem;
+    color:white;
+    border:0.1rem solid white;
+    border-radius: 50%;
+    padding:0.35rem;
+}
+/* for larger screen */
+@media (min-width: 768px){
+    body{
+     width:1440px;
+     height:100vh;
+    display: flex;
+    background-image: url(images/bg-desktop.svg);
+    background-position: top;
+}
+   
+ .navbar img{
+     width:100%;
+     margin-left: 170px;
+     margin-top: 10px;
+ }
+ .main-image{
+     width:435%;
+     height:62vh;
+     position: relative;
+     left:580px;
+     top:95px;
+ }
+
+ .heading{
+     width:500px;
+     font-size: 2.5rem;
+     margin-top: 110px;
+     text-align: start;
+ }
+ .content{
+     width:29vw;
+     text-align: start;
+     margin-left: 52rem;
+     margin-top:6rem;
+ }
+ .section2{
+     display: flex;
+     flex-direction: column;
+ }
+ .socialmedia {
+    align-self: flex-end;
+    margin-top: 8rem;
+}
+ .socialmedia li{
+     list-style: none;
+ }
+ .socialmedia ul{
+    display: flex;
+ }
+}
